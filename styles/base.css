@@ -96,12 +96,10 @@ img {
 
 .portrait {
     float: right;
-    display: float;
 }
 
 .flag {
     float: left;
-    display: float;
 }
 
 .card li {
