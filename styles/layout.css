@@ -1,0 +1,123 @@
+:root {
+    --background-color: #464544;
+    --header-color: black;
+    --body-color: lightgray;
+
+    --text-color1: white;
+    --text-color2: black;
+
+    --heading-font: "Roboto", sans-serif;
+    --body-font: "Raleway", sans-serif;
+}
+
+body {
+    margin: 0;
+    display: grid;
+    grid-template-rows: 20vh 65vh 15vh;
+}
+
+nav {
+    align-items: center;
+    display: flex;
+    justify-content: space-around;
+    position: relative;
+    bottom: -4vh;
+}
+
+main {
+    font-family: var(--body-font);
+    max-width: 95%;
+    min-width: 90%;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.content {
+    display: grid;
+    grid-template-columns: 70% 30%;
+}
+
+.card {
+    margin: 1rem;
+    border: black 3px solid;
+    border-radius: 1rem;
+    overflow: hidden;
+}
+
+header, footer {
+    background-color: var(--background-color);
+    color: var(--text-color1);
+    font-family: var(--heading-font);
+}
+
+footer {
+    text-align: center;
+}
+
+nav a {
+    color: var(--text-color1);
+    background-color: var(--header-color);
+    text-decoration: none;
+    flex: 1 1 auto;
+    text-align: center;
+    width: 100%;
+    height: 100%;
+    padding: 15px;
+    transition-duration: 0.3s;
+}
+
+nav a:hover, nav a:focus {
+    color: var(--text-color2);
+    background-color: var(--body-color);
+    transition-duration: 0.3s;
+}
+
+h1, h2, a, p {
+    padding-left: 1rem;
+    padding-right: 1rem;
+}
+
+h1 {
+    text-align: center;
+}
+
+.header {
+    text-align: center;
+    background-color: var(--background-color);
+    color: var(--text-color1);
+    margin: 0;
+    padding: 10px;
+}
+
+img {
+    border: 3px solid black;
+    margin: 15px;
+}
+
+.portrait {
+    float: right;
+    display: float;
+}
+
+.flag {
+    float: left;
+    display: float;
+}
+
+.card li {
+    padding: 0.5rem;
+}
+
+.state {
+    text-decoration: underline;
+    text-align: center;
+}
+
+.about p {
+    max-width: 75%;
+}
+
+.about img {
+    max-width: 25%;
+    max-height: 165px;
+}
