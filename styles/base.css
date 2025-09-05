@@ -72,7 +72,7 @@ nav a:hover, nav a:focus {
     transition-duration: 0.3s;
 }
 
-h1, h2, a, p {
+h1, h2, a, p, #course-title {
     padding-left: 1rem;
     padding-right: 1rem;
 }
@@ -120,4 +120,14 @@ img {
 .about img {
     max-width: 25%;
     max-height: 165px;
+}
+
+#course-title {
+    text-align: center;
+    font-size: 2em;
+    font-weight: bold;
+    display: block;
+
+    margin-block-start: 0.67em;
+    margin-block-end: 0.67em;
 }
