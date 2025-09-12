@@ -19,13 +19,9 @@ header {
     background-color: #3498db;
     color: white;
     padding: 1em;
-    text-align: center;
-}
-
-.title {
-    display: flex;
+    display: grid;
     justify-content: space-between;
-    align-items: center;
+    grid-template-columns: 90% 10%;
 }
 
 .nav-hidden {
@@ -46,6 +42,7 @@ nav a {
     transition: background-color 0.3s;
     font-size: 16px;
     font-family: var(--heading-font);
+    text-align: center;
 }
 
 nav a:hover {
