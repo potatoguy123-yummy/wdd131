@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="WDD 131 – Dynamic Web Fundamentals - Ethan O'Brien - Filtering temples by age or size">
+    <meta name="author" content="Ethan O'Brien">
+    <title>WDD 131 – Temples with filtering – Ethan O'Brien</title>
+    <link rel="stylesheet" href="styles/filtered-temples.css">
+    <link rel="stylesheet" href="styles/filtered-temples-large.css">
+    <link href="https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,100..900;1,100..900&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+    <script src="scripts/filtered-temples.js" defer></script>
+</head>
+<body>
+    <header>
+        <h1>Temple Album</h1>
+        <div class="hamburger-container">
+            <div class="hamburger-button"></div>
+        </div>
+        <nav class="nav-hidden">
+            <ul>
+                <li><a href="" id="nav-home">Home</a></li>
+                <li><a href="" id="nav-old">Old</a></li>
+                <li><a href="" id="nav-new">New</a></li>
+                <li><a href="" id="nav-large">Large</a></li>
+                <li><a href="" id="nav-small">Small</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <h2>Home</h2>
+        <div class="temples"></div>
+    </main>
+    <footer>
+        <p>©<span id="currentyear"></span> | Ethan O'Brien | United States</p>
+        <p>Last modified: <span id="lastModified"></span></p>
+    </footer>
+</body>
+</html>
