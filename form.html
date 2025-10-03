@@ -6,6 +6,8 @@
     <meta name="description" content="WDD 131 – Dynamic Web Fundamentals - Product review form">
     <meta name="author" content="Ethan O'Brien">
     <title>Product review</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,100..900;1,100..900&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="styles/form.css">
     <script src="scripts/form.js" defer></script>
@@ -15,7 +17,8 @@
         <p>Product Review</p>
     </header>
     <main>
-        <form method="GET" action="review.html">
+        <!-- SMH. The audit tool wouldnt let me put method="GET" :((( -->
+        <form method="get" action="review.html">
             <div class="product_name">
                 <label for="product">Product Name</label>
                 <select id="product" name="product" required>
@@ -73,9 +76,7 @@
                 <label for="user_name_value">Your Name <i>(Optional)</i></label>
                 <input type="text" id="user_name_value" name="user_name_value">
             </div>
-            <div class="submit_button">
-                <input type="submit" value="Submit Review">
-            </div>
+            <input type="submit" value="Publish Review">
         </form>
     </main>
     <footer>
