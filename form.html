@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="WDD 131 – Dynamic Web Fundamentals - Product review form">
+    <meta name="author" content="Ethan O'Brien">
+    <title>Product review</title>
+    <link href="https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,100..900;1,100..900&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles/form.css">
+    <script src="scripts/form.js" defer></script>
+</head>
+<body>
+    <header>
+        <p>Product Review</p>
+    </header>
+    <main>
+        <form method="GET" action="review.html">
+            <div class="product_name">
+                <label for="product">Product Name</label>
+                <select id="product" name="product" required>
+                    <option value="" disabled selected>Select a Product...</option>
+                </select>
+            </div>
+
+            <div class="star_rating">
+                <p>Overall rating</p>
+                <div class="stars">
+                    <div>
+                        <label for="one_star">&star;</label>
+                        <input type="radio" id="one_star" name="star_rating" value="one_star" required>
+                    </div>
+                    <div>
+                        <label for="two_star">&star;&star;</label>
+                        <input type="radio" id="two_star" name="star_rating" value="two_star" required>
+                    </div>
+                    <div>
+                        <label for="three_star">&star;&star;&star;</label>
+                        <input type="radio" id="three_star" name="star_rating" value="three_star" required>
+                    </div>
+                    <div>
+                        <label for="four_star">&star;&star;&star;&star;</label>
+                        <input type="radio" id="four_star" name="star_rating" value="four_star" required>
+                    </div>
+                    <div>
+                        <label for="five_star">&star;&star;&star;&star;&star;</label>
+                        <input type="radio" id="five_star" name="star_rating" value="five_star" required>
+                    </div>
+                </div>
+            </div>
+            <div class="date_installed">
+                <label for="date_installed_value">Date of Installation</label>
+                <input type="date" id="date_installed_value" name="date_installed_value" required>
+            </div>
+            <div class="useful_features">
+                <p>Which features did you find useful in this product? <i>(Check all that apply)</i></p>
+                <div class="features">
+                    <input type="checkbox" id="durability" name="useful_features" value="durability">
+                    <label for="durability">Durability</label>
+                    <input type="checkbox" id="ease_of_use" name="useful_features" value="ease_of_use">
+                    <label for="ease_of_use">Ease of Use</label>
+                    <input type="checkbox" id="performance" name="useful_features" value="performance">
+                    <label for="performance">Performance</label>
+                    <input type="checkbox" id="design" name="useful_features" value="design">
+                    <label for="design">Design</label>
+                </div>
+            </div>
+            <div class="written_review">
+                <label for="written_review_value">Written Review <i>(Optional)</i></label>
+                <textarea id="written_review_value" name="written_review_value"></textarea>
+            </div>
+            <div class="user_name">
+                <label for="user_name_value">Your Name <i>(Optional)</i></label>
+                <input type="text" id="user_name_value" name="user_name_value">
+            </div>
+            <div class="submit_button">
+                <input type="submit" value="Submit Review">
+            </div>
+        </form>
+    </main>
+    <footer>
+        <p>©<span id="currentyear"></span> | Ethan O'Brien | United States</p>
+        <p>Last modified: <span id="lastModified"></span></p>
+    </footer>
+</body>
+</html>
