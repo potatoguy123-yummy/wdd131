@@ -3,6 +3,7 @@
         "image": "https://picsum.photos/200/200/",
         "partNumber": 1,
         "name": "Screws",
+        "description": "",
         "category": "Fasteners",
         "details": {
             "length": "1mm"
@@ -13,6 +14,7 @@
         "image": "https://picsum.photos/200/200/",
         "partNumber": 2,
         "name": "Screws",
+        "description": "",
         "category": "Fasteners",
         "details": {
             "length": "1mm"
@@ -23,6 +25,7 @@
         "image": "https://picsum.photos/200/200/",
         "partNumber": 3,
         "name": "Screws",
+        "description": "",
         "category": "Fasteners",
         "details": {
             "length": "1mm"
@@ -33,6 +36,7 @@
         "image": "https://picsum.photos/200/200/",
         "partNumber": 4,
         "name": "Screws",
+        "description": "",
         "category": "Wires",
         "details": {
             "length": "1mm"
@@ -43,6 +47,7 @@
         "image": "https://picsum.photos/200/250/",
         "partNumber": 5,
         "name": "Screws",
+        "description": "",
         "category": "Hand Tools",
         "details": {
             "length": "1mm"

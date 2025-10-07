@@ -1,5 +1,4 @@
 const res = await fetch("scripts/parts.json");
-const urlParams = new URLSearchParams(window.location.search);
 let parts = await res.text();
 try {
     parts = JSON.parse(parts);
@@ -8,6 +7,7 @@ try {
     console.error(e);
     throw e;
 }
+const urlParams = new URLSearchParams(window.location.search);
 
 const cat = urlParams.get("cat");
 const query = urlParams.get("query");
@@ -99,13 +99,13 @@ function validCategory(category) {
 function getKit(kit) {
     kit = parseInt(kit);
     if (isNaN(kit)) return null;
-    return parts.filter(part => part.kit && part.kitNumber === kit)[0] || null;
+    return parts.find(part => part.kit && part.kitNumber === kit) || null;
 }
 
 function getPart(partNumber) {
     partNumber = parseInt(partNumber);
     if (isNaN(partNumber)) return null;
-    return parts.filter(part => !part.kit && part.partNumber === partNumber)[0] || null;
+    return parts.find(part => !part.kit && part.partNumber === partNumber) || null;
 }
 
 function displaySearchResult(query) {

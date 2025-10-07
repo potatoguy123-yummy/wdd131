@@ -1,0 +1,86 @@
+* {
+	box-sizing: border-box;
+	margin: 0;
+	padding: 0;
+}
+
+:root {
+    --header-color: #683523;
+    --background-color: #FDF8E2;
+
+    --image-width: 200px;
+}
+
+body {
+    background-color: var(--background-color);
+}
+
+header {
+    background-color: var(--header-color);
+    color: white;
+    padding: 10px;
+}
+
+.header_row {
+    display: grid;
+    grid-template-columns: 3fr 1fr auto;
+}
+
+.searchbox {
+    width: 80%;
+    height: 100%;
+}
+
+.search-submit {
+    width: 15%;
+    height: 100%;
+}
+
+.shopping-cart {
+    width: 35px;
+    height: 35px;
+    max-width: 35px;
+    max-height: 35px;
+}
+
+.cart-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+}
+
+.searchbox-container {
+    display: flex;
+    justify-content: right;
+    align-items: center;
+    min-width: 200px;
+}
+
+.searchbox-container form {
+    width: 100%;
+    height: 100%;
+    max-height: 32px;
+    min-width: 100px;
+}
+
+@media (max-width: 600px) {
+    .header_row {
+        display: grid;
+        grid-template-columns: 1fr auto;
+        grid-template-rows: 1fr 1fr;
+        grid-template-areas:
+            "title cart"
+            "searchbox searchbox";
+    }
+    .header-title {
+        grid-area: title;
+    }
+    .searchbox-container {
+        justify-content: center;
+        grid-area: searchbox;
+    }
+    .cart-container {
+        grid-area: cart;
+    }
+}
