@@ -1,0 +1,59 @@
+[
+    {
+        "image": "https://picsum.photos/200/200/",
+        "partNumber": 1,
+        "name": "Screws",
+        "category": "Fasteners",
+        "details": {
+            "length": "1mm"
+        },
+        "kit": false
+    },
+    {
+        "image": "https://picsum.photos/200/200/",
+        "partNumber": 2,
+        "name": "Screws",
+        "category": "Fasteners",
+        "details": {
+            "length": "1mm"
+        },
+        "kit": false
+    },
+    {
+        "image": "https://picsum.photos/200/200/",
+        "partNumber": 3,
+        "name": "Screws",
+        "category": "Fasteners",
+        "details": {
+            "length": "1mm"
+        },
+        "kit": false
+    },
+    {
+        "image": "https://picsum.photos/200/200/",
+        "partNumber": 4,
+        "name": "Screws",
+        "category": "Wires",
+        "details": {
+            "length": "1mm"
+        },
+        "kit": false
+    },
+    {
+        "image": "https://picsum.photos/200/250/",
+        "partNumber": 5,
+        "name": "Screws",
+        "category": "Hand Tools",
+        "details": {
+            "length": "1mm"
+        },
+        "kit": false
+    },
+    {
+        "image": "https://picsum.photos/200/200/",
+        "kitNumber": 11,
+        "name": "Electrical Outlet",
+        "parts": [1, 5],
+        "kit": true
+    }
+]
