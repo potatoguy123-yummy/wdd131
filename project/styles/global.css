@@ -12,6 +12,29 @@
     --min-image-height: 150px;
 }
 
+header, footer {
+    font-family: "Roboto", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 300;
+    font-style: normal;
+    font-variation-settings: "wdth" 100;
+}
+
+main {
+    font-family: "Open Sans", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 100;
+    font-style: normal;
+    font-variation-settings: "wdth" 100;
+}
+
+.information h2 {
+  font-family: "Roboto Slab", serif;
+  font-optical-sizing: auto;
+  font-weight: 750;
+  font-style: normal;
+}
+
 body {
     background-color: var(--background-color);
     display: flex;
