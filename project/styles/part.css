@@ -21,7 +21,22 @@ main {
 }
 
 .information form {
+    height: 32px;
+}
+
+.bottom {
     margin-top: auto;
+}
+
+.information input[type="number"] {
+    min-height: 100%;
+    width: 10%;
+    min-width: 40px;
+    max-width: 100px;
+}
+.information input[type="submit"] {
+    min-height: 100%;
+    padding: 0 4px;
 }
 
 .information ul {
@@ -34,6 +49,22 @@ main {
 
 .description {
     margin: 10px 4px;
+}
+
+.information a, .bottom form input[type="submit"] {
+    border: 2px solid black;
+    border-radius: 7px;
+    background-color: black;
+    color: white;
+    font-size: medium;
+    padding: 7px;
+    transition: .4s;
+    cursor: pointer;
+}
+
+.information a:hover, .bottom form input[type="submit"]:hover {
+    background-color: rgb(119, 102, 102);
+    transition: .2s;
 }
 
 @media (max-width: 600px) {

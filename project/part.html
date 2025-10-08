@@ -16,8 +16,9 @@
     <header>
         <div class="header_row">
             <div class="header-title">
-                <h1>BuildTech Supply</h1>
-                <p>Where all your technological, electrical, and building supplies meet.</p>
+                <a href="./">
+                    <img src="images/logo.svg" alt="BuildTech Supply Company Logo">
+                </a>
             </div>
             <div class="searchbox-container">
                 <form action="./" method="GET">
@@ -43,10 +44,13 @@
                 <ul id="specs"></ul>
             </div>
             <!-- This form submit is listened for in JS events -->
-            <form>
-                <input type="number" name="quantity" title="quantity" min="1" max="10" value="1">
-                <input type="submit" value="Add to Cart">
-            </form>
+            <div class="bottom">
+                <p class="hidden">Items have been added to cart! <a href="cart.html">Go to Cart</a></p>
+                <form>
+                    <input type="number" name="quantity" title="quantity" min="1" max="10" value="1">
+                    <input type="submit" value="Add to Cart">
+                </form>
+            </div>
         </div>
     </main>
     <footer>

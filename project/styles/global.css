@@ -34,6 +34,8 @@ header {
 .search-submit {
     width: 15%;
     height: 100%;
+    background-color: white;
+    cursor: pointer;
 }
 
 .shopping-cart {
@@ -50,6 +52,11 @@ header {
     cursor: pointer;
 }
 
+.header-title img {
+    max-height: 100px;
+    text-decoration: none;
+}
+
 .searchbox-container {
     display: flex;
     justify-content: right;
@@ -62,6 +69,15 @@ header {
     height: 100%;
     max-height: 32px;
     min-width: 100px;
+}
+
+.hidden {
+    display: none;
+}
+
+img {
+    user-select: none;
+    -webkit-user-drag: none;
 }
 
 @media (max-width: 600px) {
