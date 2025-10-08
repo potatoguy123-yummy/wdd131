@@ -9,6 +9,7 @@
     --background-color: #FDF8E2;
 
     --image-width: 200px;
+    --min-image-height: 150px;
 }
 
 body {

@@ -11,6 +11,7 @@ main {
 
 .image img {
     max-width: var(--image-width);
+    min-height: var(--min-image-height);
     max-height: 100%;
 }
 

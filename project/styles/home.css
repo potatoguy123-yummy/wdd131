@@ -27,6 +27,7 @@
 
 .product_cards img {
     width: var(--image-width);
+    min-height: var(--min-image-height);
 }
 
 .back {
