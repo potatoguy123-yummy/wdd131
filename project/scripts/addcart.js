@@ -1,13 +1,16 @@
-const form = document.querySelector(".information form");
 const urlParams = new URLSearchParams(window.location.search);
 const limit = 10;
-form.addEventListener("submit", (event) => {
-    event.preventDefault();
-    const part = parseInt(urlParams.get("part"));
-    const quantity = parseInt(form.querySelector('input[type="number"]').value);
-    addPartToCart(part, quantity);
-    hideFormShowMessage();
-})
+
+const form = document.querySelector(".information form");
+if (form) {
+    form.addEventListener("submit", (event) => {
+        event.preventDefault();
+        const part = parseInt(urlParams.get("part"));
+        const quantity = parseInt(form.querySelector('input[type="number"]').value);
+        addPartToCart(part, quantity);
+        hideFormShowMessage();
+    })
+}
 
 function hideFormShowMessage() {
     document.querySelector(".bottom p").classList.remove("hidden");
@@ -44,4 +47,23 @@ function addPartToCart(part, quantity) {
         cartData[part] = limit;
     }
     setCartData(cartData);
+}
+
+function setPartQty(part, quantity) {
+    const cartData = getCart();
+    if (isNaN(cartData[part])) {
+        cartData[part] = 0;
+    }
+    cartData[part] = quantity;
+    if (cartData[part] > limit) {
+        cartData[part] = limit;
+    }
+    setCartData(cartData);
+}
+
+window.cart = {
+    get: getCart,
+    set: setCartData,
+    add: addPartToCart,
+    set: setPartQty
 }
