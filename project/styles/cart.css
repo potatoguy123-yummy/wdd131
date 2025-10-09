@@ -33,3 +33,33 @@ form input[type="submit"] {
 .checkout h1 {
     font-size: xx-large;
 }
+
+.remove {
+    background-color: rgb(194, 46, 46) !important;
+}
+
+.remove:hover {
+    background-color: rgb(255, 0, 0) !important;
+    transition: .2s;
+}
+
+.empty-cart {
+    text-align: center;
+    margin-top: 3rem;
+    font-size: small;
+}
+
+@media (max-width: 600px) {
+    li {
+        grid-template-columns: auto;
+        grid-template-rows: auto auto;
+    }
+
+    li:after {
+        content: "";
+        display: block;
+        border-top: 2px dashed #000;
+        margin-top: 10px;
+        padding-top: 1rem;
+    }
+}

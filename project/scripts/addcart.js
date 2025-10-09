@@ -61,9 +61,16 @@ function setPartQty(part, quantity) {
     setCartData(cartData);
 }
 
+function deletePartFromCart(part) {
+    const cartData = getCart();
+    delete cartData[part];
+    setCartData(cartData);
+}
+
 window.cart = {
     get: getCart,
     set: setCartData,
     add: addPartToCart,
-    set: setPartQty
+    set: setPartQty,
+    delete: deletePartFromCart
 }

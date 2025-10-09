@@ -18,6 +18,18 @@ for (const k in cart) {
     }
 }
 
+if (Object.keys(cart).length === 0) {
+    document.querySelector(".checkout").remove();
+
+    const div = document.createElement("div");
+    div.classList.add("empty-cart");
+    const h2 = document.createElement("h2");
+    h2.textContent = "Your cart is empty!"
+    div.appendChild(h2);
+
+    document.querySelector("main").appendChild(div);
+}
+
 function addToCart(part, quantity) {
     const li = document.createElement("li");
     const divImg = document.createElement("image");
@@ -31,6 +43,7 @@ function addToCart(part, quantity) {
         <p>Total quantity in cart: <input type="number" title="quantity" id="quantity" value="1" min="1" max="10"></p>
         <div class="bottom">
             <a id="partlocation">View more details</a>
+            <a class="remove">Remove from Cart</a>
         </div>
     `;
     li.appendChild(divImg);
@@ -48,6 +61,11 @@ function addToCart(part, quantity) {
     divImg.appendChild(img);
     divInfo.querySelector("#quantity").addEventListener("change", (e) => {
         window.cart.set(part.partNumber, parseInt(e.target.value));
+    })
+    divInfo.querySelector(".remove").addEventListener("click", (e) => {
+        e.preventDefault();
+        li.remove();
+        window.cart.delete(part.partNumber);
     })
 }
 
