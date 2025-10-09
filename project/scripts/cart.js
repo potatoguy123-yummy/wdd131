@@ -19,6 +19,10 @@ for (const k in cart) {
 }
 
 if (Object.keys(cart).length === 0) {
+    renderEmptyCart();
+}
+
+function renderEmptyCart() {
     document.querySelector(".checkout").remove();
 
     const div = document.createElement("div");
@@ -66,6 +70,9 @@ function addToCart(part, quantity) {
         e.preventDefault();
         li.remove();
         window.cart.delete(part.partNumber);
+        if (list.children.length === 0) {
+            renderEmptyCart();
+        }
     })
 }
 
