@@ -1,64 +1,130 @@
 [
     {
-        "image": "https://picsum.photos/200/200/",
+        "image": "images/items/screw1.jpg",
         "partNumber": 1,
-        "name": "Screws",
-        "description": "",
+        "name": "Phillips Steel Screw",
+        "description": "#10-32 x 1/2\" Phillips Stainless Steel Machine Screw",
         "category": "Fasteners",
         "details": {
-            "length": "1mm"
+            "Thread Size": "#10-32",
+            "Material": "Stainless Steel",
+            "Length": "1/2\"",
+            "Drive Style": "Phillips"
         },
         "kit": false
     },
     {
-        "image": "https://picsum.photos/200/200/",
+        "image": "images/items/screw2.jpg",
         "partNumber": 2,
-        "name": "Screws",
-        "description": "",
+        "name": "Phillips Wood Screw",
+        "description": "#8-13 X 2\" Phillips Wood Screw",
         "category": "Fasteners",
         "details": {
-            "length": "1mm"
+            "Thread Size": "#8-13",
+            "Material": "Steel",
+            "Length": "2\"",
+            "Drive Style": "Phillips"
         },
         "kit": false
     },
     {
-        "image": "https://picsum.photos/200/200/",
+        "image": "images/items/bolt1.jpg",
         "partNumber": 3,
-        "name": "Screws",
-        "description": "",
+        "name": "Hex Cap Screw",
+        "description": "1/4\"-20 x 1/2\" Hex Cap Screw",
         "category": "Fasteners",
         "details": {
-            "length": "1mm"
+            "Thread Size": "1/4\"-20",
+            "Material": "Steel",
+            "Length": "1/2\"",
+            "Wrench Size": "7/16\""
         },
         "kit": false
     },
     {
-        "image": "https://picsum.photos/200/200/",
+        "image": "images/items/nut1.jpg",
         "partNumber": 4,
-        "name": "Screws",
-        "description": "",
-        "category": "Wires",
+        "name": "Hex Nut",
+        "description": "1/4\"-20 Hex Nut",
+        "category": "Fasteners",
         "details": {
-            "length": "1mm"
+            "Thread Size": "1/4\"-20",
+            "Material": "Steel",
+            "Wrench Size": "7/16\""
         },
         "kit": false
     },
     {
-        "image": "https://picsum.photos/200/250/",
+        "image": "images/items/wrench.jpg",
         "partNumber": 5,
-        "name": "Screws",
-        "description": "",
-        "category": "Hand Tools",
+        "name": "Wrench Set",
+        "description": "11 Pc 1/4\" - 3/4\" Steel Combination Wrench Set",
+        "category": "Tools",
         "details": {
-            "length": "1mm"
+            "Head Sizes": "1/4\" - 3/4\"",
+            "Number of Pieces": "11",
+            "Material": "Steel"
         },
         "kit": false
     },
     {
-        "image": "https://picsum.photos/200/200/",
+        "image": "images/items/rubberhammer.jpg",
+        "partNumber": 6,
+        "name": "Rubber Hammer",
+        "description": "",
+        "category": "Tools",
+        "details": {
+            "Material": "Rubber",
+            "Length": "12\"",
+            "Color": "Black",
+            "Weight": "2.5 lbs"
+        },
+        "kit": false
+    },
+    {
+        "image": "images/items/crimping.jpg",
+        "partNumber": 7,
+        "name": "Crimping Tool",
+        "description": "",
+        "category": "Tools",
+        "details": {
+            "Wire Size": "22 - 8 AWG",
+            "Color": "Yellow",
+            "Weight": "1.8 lbs"
+        },
+        "kit": false
+    },
+    {
+        "image": "images/items/hinge.jpg",
+        "partNumber": 8,
+        "name": "Square Door Hinge",
+        "description": "",
+        "category": "Supplies",
+        "details": {
+            "Material": "Steel",
+            "Finish": "Brass",
+            "Thickness": "0.090\""
+        },
+        "kit": false
+    },
+    {
+        "image": "images/items/shovel.jpg",
+        "partNumber": 9,
+        "name": "Shovel",
+        "description": "",
+        "category": "Supplies",
+        "details": {
+            "Lenght": "48\"",
+            "Material": "Steel",
+            "Weight": "5 lbs"
+        },
+        "kit": false
+    },
+    {
+        "image": "images/items/hinge.jpg",
         "kitNumber": 11,
-        "name": "Electrical Outlet",
-        "parts": [1, 5],
+        "name": "Fix a Door",
+        "parts": [2, 8],
         "kit": true
     }
 ]

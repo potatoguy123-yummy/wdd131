@@ -29,6 +29,7 @@ main {
 .bottom {
     margin-top: auto;
     margin-bottom: 1rem;
+    padding-top: 1rem !important;
 }
 
 .information input[type="number"] {
