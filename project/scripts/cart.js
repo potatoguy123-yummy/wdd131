@@ -43,7 +43,6 @@ function addToCart(part, quantity) {
     divInfo.innerHTML = `
         <h2>Part Name: <span id="partname"></span></h2>
         <p id="description" class="description">Long description here</p>
-        <p>Total Cost: <span id="price"></span></p>
         <p>Total quantity in cart: <input type="number" title="quantity" id="quantity" value="1" min="1" max="10"></p>
         <div class="bottom">
             <a id="partlocation">View more details</a>
