@@ -1,5 +1,5 @@
 const urlParams = new URLSearchParams(window.location.search);
-const limit = 10;
+const limit = 1000;
 
 const form = document.querySelector(".information form");
 if (form) {
@@ -67,10 +67,15 @@ function deletePartFromCart(part) {
     setCartData(cartData);
 }
 
+function clearCart() {
+    setCartData({});
+}
+
 window.cart = {
     get: getCart,
     set: setCartData,
     add: addPartToCart,
     set: setPartQty,
-    delete: deletePartFromCart
+    delete: deletePartFromCart,
+    clear: clearCart
 }

@@ -49,9 +49,9 @@
             <!-- This form submit is listened for in JS events -->
             <div class="bottom">
                 <p class="hidden">Items have been added to cart! <a href="cart.html">Go to Cart</a></p>
-                <form>
-                    <input type="number" name="quantity" title="quantity" min="1" max="10" value="1">
-                    <input type="submit" value="Add to Cart">
+                <form autocomplete="off">
+                    <input type="number" name="quantity" title="quantity" min="1" max="10" value="1" required>
+                    <input type="submit" value="Add to Cart" required>
                 </form>
             </div>
         </div>
